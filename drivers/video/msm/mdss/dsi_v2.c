@@ -177,7 +177,7 @@ static int dsi_parse_gpio(struct platform_device *pdev,
 static void mdss_dsi_put_dt_vreg_data(struct device *dev,
 	struct dss_module_power *module_power)
 {
-	struct dss_module_power *module_power = &(ctrl_pdata->power_data);
+//	struct dss_module_power *module_power = &(ctrl_pdata->power_data);
 	if (!module_power) {
 		pr_err("%s: invalid input\n", __func__);
 		return;
