@@ -1388,7 +1388,7 @@ static int cyttsp4_ic_parse_input(struct device *dev, const char *buf,
 	int last = 0;
 	int ret;
 
-	dev_dbg(dev, "%s: pbuf=%p buf=%p size=%zu %s=%lu buf=%s\n", __func__,
+	dev_dbg(dev, "%s: pbuf=%p buf=%p size=%zu %s=%u buf=%s\n", __func__,
 			pbuf, buf, buf_size, "scan buf size",
 			CYTTSP4_INPUT_ELEM_SZ, buf);
 

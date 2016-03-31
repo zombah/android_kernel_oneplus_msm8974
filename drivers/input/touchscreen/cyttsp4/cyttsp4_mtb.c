@@ -80,7 +80,7 @@ static int cyttsp4_input_register_device(struct input_dev *input, int max_slots)
 	input_set_abs_params(input, ABS_MT_TOOL_TYPE,
 			0, MT_TOOL_MAX, 0, 0);
 
-	input_mt_init_slots(input, max_slots, 0);
+	input_mt_init_slots(input, max_slots);
 	return input_register_device(input);
 }
 
