@@ -32,10 +32,10 @@
 #include <linux/qpnp-revid.h>
 #include <linux/alarmtimer.h>
 #include <linux/spinlock.h>
+#include <linux/fb.h>
 
 #ifdef CONFIG_MACH_OPPO
 #include <linux/boot_mode.h>
-#include <linux/fb.h>
 #include <linux/gpio.h>
 #include <linux/notifier.h>
 #include <linux/pcb_version.h>
@@ -7338,7 +7338,7 @@ qpnp_charger_remove(struct spmi_device *spmi)
 	regulator_unregister(chip->otg_vreg.rdev);
 	regulator_unregister(chip->boost_vreg.rdev);
 
-#ifdef CONFIG_FB
+#ifdef CONFIG_MACH_OPPO
 	if (fb_unregister_client(&chip->fb_notif))
 		pr_err("Error occurred while unregistering fb_notifier.\n");
 #endif
