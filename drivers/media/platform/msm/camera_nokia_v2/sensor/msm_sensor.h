@@ -27,7 +27,7 @@
 #include <linux/of_gpio.h>
 #include <linux/gpio.h>
 #include <mach/camera2.h>
-#include <media/msm_cam_sensor.h>
+#include <media/msm_cam_sensor_nokia.h>
 #include <media/v4l2-subdev.h>
 #include "msm_camera_i2c.h"
 #include "msm_sd.h"

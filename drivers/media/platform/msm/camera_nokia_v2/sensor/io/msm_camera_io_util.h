@@ -16,7 +16,7 @@
 #include <linux/regulator/consumer.h>
 #include <linux/gpio.h>
 #include <mach/camera2.h>
-#include <media/msm_cam_sensor.h>
+#include <media/msm_cam_sensor_nokia.h>
 
 #define NO_SET_RATE -1
 #define INIT_RATE -2
